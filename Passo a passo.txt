@@ -1,0 +1,33 @@
+1 - Baixamos o arquivo do Selenium para o Firefox (geckodriver)
+2 - Iniciamos o mavem para começarmos o projeto --> Ctr + shift + p e pesquisamos por "java: overview" (Já com o pacote do java para vscode instalado)
+3 - Instalamos o selenium -> npm install selenium
+4 - Instalamos o junit --> npm install junit
+5 - Não podemos esquecer de adicionarmos o caminho do geckodriver ao path no caso do windows
+6 - Configuramos o arquivo pom.xml para que seja possível termos acceso ao selenium e também o junit desta forma:
+
+    <dependency>
+      <groupId>org.testifyproject.junit5</groupId>
+      <artifactId>junit5</artifactId>
+      <version>1.0.6</version>
+      <type>pom</type>
+    </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <version>4.0.0</version>
+    </dependency>
+  </dependencies>
+
+OBS: Podemos adicionar o caminho do chromedriver no path (caso do windows).
+Mas, se não, podemos passar o caminho desta maneira --> 
+
+System.setProperty("webdriver.gecko.driver", "CAMINHO COMPLETO PARA O ARQUIVO DO GECKODRIVER")
+System.setProperty("webdriver.chrome.driver", "CAMINHO COMPLETO PARA O ARQUIVO DO CHROMEDRIVER")
+

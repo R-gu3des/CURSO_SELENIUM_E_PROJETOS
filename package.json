@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "junit": "^1.4.9",
+    "selenium": "^2.20.0"
+  }
+}
