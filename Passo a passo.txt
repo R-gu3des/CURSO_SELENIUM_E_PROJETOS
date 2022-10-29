@@ -5,6 +5,7 @@
 5 - Não podemos esquecer de adicionarmos o caminho do geckodriver ao path no caso do windows
 6 - Configuramos o arquivo pom.xml para que seja possível termos acceso ao selenium e também o junit desta forma:
 
+  <dependencies>
     <dependency>
       <groupId>org.testifyproject.junit5</groupId>
       <artifactId>junit5</artifactId>
