@@ -180,7 +180,7 @@ public class TesteFormulario {
 
         driver.get(caminho);
 
-        driver.findElement(By.linkText("voltar")).click();
+        driver.findElement(By.linkText("Voltar")).click();
         Assert.assertEquals("Voltou!", driver.findElement(By.id("resultado")).getText());
         pularSegundos(10);
         driver.quit();

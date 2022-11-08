@@ -10,6 +10,7 @@ public class AreaDeTeste {
     PreencherForm preencher = new PreencherForm();
     TesteFrame frame = new TesteFrame();
     TestePopUp popup = new TestePopUp();
+    DesafioFormulario desafio =  new DesafioFormulario();
     
     @Test
     void testAbrirForm() {
@@ -101,6 +102,16 @@ public class AreaDeTeste {
     @Test
     void testAbrirPopUp() {
         popup.abrirPopUp();
+    }
+
+    @Test
+    void testIneteragirComJanelaSemTitulo() {
+        popup.ineteragirComJanelaSemTitulo();
+    }
+
+    @Test
+    void testTesteRegrasForm() {
+        desafio.TesteRegrasForm();
     }
 
 }
